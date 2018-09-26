@@ -1,11 +1,15 @@
 ﻿using CoreGraphics;
 using Foundation;
+using HtmlToPdfTest.iOS;
 using System;
 using System.IO;
 using UIKit;
+using Xamarin.Forms;
 
+[assembly: Dependency(typeof(HtmlToPdf_iOS))]
 namespace HtmlToPdfTest.iOS
 {
+
     public class HtmlToPdf_iOS : IHtmlToPdf
     {
         public string SafeHTMLToPDF(string html, string filename)
